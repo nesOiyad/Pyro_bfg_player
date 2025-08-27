@@ -14,7 +14,7 @@ def on_click(x, y, button, pressed):
             pixel = sct.grab(monitor).pixel(0, 0)
             if is_red(pixel):
                 subprocess.Popen(["afplay", "doom.wav"])
-                print("Playing BFG now!")
+                
 
 from pynput import mouse
 listener = mouse.Listener(on_click=on_click)
